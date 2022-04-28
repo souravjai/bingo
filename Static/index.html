@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="icon" type="image/x-icon" href="/Static/Icons/favicon.jpeg">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="./CSS/land_style_phone.css">
+
+</head>
+
+<body>
+    <header>
+        <span>B</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>O</span>
+    </header>
+    <div class="container">
+        <div class="button">
+            <button id="create" class="btn" onclick="createGame()">Create Room</button>
+            <button id="join" class="btn" onclick="joinGame()">Join Room</button >
+        </div>
+        <div id="RoomInfo">
+            <form action="/game.html">
+                <input type="text" id="name" name="name" autocomplete="off" placeholder="Enter your name" required>
+                <input type="text" id="code" name="code" autocomplete="off" placeholder="Enter the code" >
+                <input type="submit" value="Submit" id="submit" class="btn">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Developed by Sourav Jaiswal</p>
+            <div class="links">
+                <a href="https://github.com/souravjai"><img src="./Icons/Github.png" alt="" srcset="" height="32px"></a>
+                <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194"><img src="./Icons/linkedin.png" alt="" srcset="" height="32px"></a>
+                <a href="mailto:souravjaiswal2000@gmail.com"><img src="./Icons/gmail.png" alt="" srcset="" height="32px"></a>
+                <a href="https://www.facebook.com/profile.php?id=100004102851464"><img src="./Icons/facebook.png" alt="" srcset="" height="32px"></a>
+            </div>
+        </div>
+    </footer>
+    <script defer src="./js/script.js"></script>
+</body>
+
+</html>

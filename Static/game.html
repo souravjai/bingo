@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="./CSS/land_style_phone.css">
+    <link rel="icon" type="image/x-icon" href="/Static/Icons/favicon.jpeg">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="error">
+            <div class="errorHeading">Error!</div>
+            <div class="errorMessage"></div>
+            <button class="ok" onclick="hideOverlay()">OK</button>
+        </div>
+    </div>
+    </div>
+    <header>
+        <span>B</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>O</span>
+    </header>
+    <div id="room" class="room">
+        <div class="head"></div>
+        <div class="players">
+        </div>
+        <div class="gameStart">
+            <button class="btn" id="start" onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+    <div id="gamePage">
+        <div class="gameArea">
+            <div class="bingoArea">
+                <p id="reset" onclick="reset()">Reset</p>
+                <div class="bingo" id="1" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="2" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="3" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="4" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="5" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="6" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="7" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="8" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="9" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="10" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="11" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="12" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="13" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="14" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="15" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="16" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="17" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="18" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="19" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="20" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="21" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="22" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="23" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="24" onclick="clicked(this.id)"></div>
+                <div class="bingo" id="25" onclick="clicked(this.id)"></div>
+            </div>
+        </div>
+        <div class="arena">
+            <span class="message">
+           <p> </p>
+        </span>
+            <span class="timer">
+                 <div class="motion">
+                    <span>15</span>
+            <div class="circle"></div>
+        </div>
+        </span>
+    </div>
+
+    <div class="list">
+    </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/socket_functions.js"></script>
+    <script src="./js/helper.js"></script>
+</body>
+
+</html>

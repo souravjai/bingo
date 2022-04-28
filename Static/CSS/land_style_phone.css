@@ -1,0 +1,40 @@
+header {
+    height: 50px;
+}
+
+.container {
+    /* border: 1px solid blue; */
+    height: 400px;
+}
+
+.arena {
+    width: 95%;
+    gap: 0;
+    margin: 10px auto;
+}
+
+.message {
+    height: 50px;
+    width: 210px;
+    margin-right: 10px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+}
+
+.motion {
+    height: 60px;
+    width: 60px;
+}
+
+.list {
+    margin: auto;
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bingo {
+    user-select: none;
+}
