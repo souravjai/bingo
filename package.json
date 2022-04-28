@@ -1,21 +1,22 @@
 {
-  "name": "bingo",
-  "version": "1.0.0",
-  "description": "Indian Bingo Game",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "bingo"
-  ],
-  "author": "Sourav",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.3",
-    "http": "0.0.1-security",
-    "path": "^0.12.7",
-    "pug": "^3.0.2",
-    "socket.io": "^4.5.0"
-  }
+    "name": "bingo",
+    "version": "1.0.0",
+    "description": "Indian Bingo Game",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "bingo"
+    ],
+    "author": "Sourav",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.3",
+        "http": "0.0.1-security",
+        "path": "^0.12.7",
+        "pug": "^3.0.2",
+        "socket.io": "^4.5.0"
+    }
 }
