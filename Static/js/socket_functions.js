@@ -23,7 +23,7 @@ socket.on('compute', ele => {
     message.innerText = `${ele} was selected`;
 
     if (role == 1) {
-        setTimeout(replay, 1500);
+        setTimeout(replay, 1000);
     }
 
     check();
